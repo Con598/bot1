@@ -3,7 +3,7 @@ import time
 
 
 API_URL = 'https://api.telegram.org/bot'
-BOT_TOKEN = '8265712219:AAFLS46H-VPasNf_E0r-30vtzeR5Kni1Xts'
+BOT_TOKEN = ''
 TEXT = 'Ура! Классный апдейт!'
 MAX_COUNTER = 100
 
@@ -25,4 +25,5 @@ while counter < MAX_COUNTER:
             requests.get(f'{API_URL}{BOT_TOKEN}/sendMessage?chat_id={chat_id}&text={TEXT}')
 
     time.sleep(1)
+
     counter += 1
