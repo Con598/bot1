@@ -4,7 +4,7 @@ import time
 
 API_URL = 'https://api.telegram.org/bot'
 API_CATS_URL = 'https://api.thecatapi.com/v1/images/search'
-BOT_TOKEN = '8265712219:AAFLS46H-VPasNf_E0r-30vtzeR5Kni1Xts'
+BOT_TOKEN = ''
 ERROR_TEXT = 'Здесь должна была быть картинка с котиком :('
 
 offset = -2
@@ -29,4 +29,5 @@ while counter < 100:
                 requests.get(f'{API_URL}{BOT_TOKEN}/sendMessage?chat_id={chat_id}&text={ERROR_TEXT}')
 
     time.sleep(1)
+
     counter += 1
