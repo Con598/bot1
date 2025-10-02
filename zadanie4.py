@@ -3,7 +3,7 @@ import time
 
 
 API_URL = 'https://api.telegram.org/bot'
-BOT_TOKEN = '8265712219:AAFLS46H-VPasNf_E0r-30vtzeR5Kni1Xts'
+BOT_TOKEN = ''
 offset = -2
 timeout = 60
 updates: dict
@@ -24,3 +24,4 @@ while True:
 
     end_time = time.time()
     print(f'Время между запросами к Telegram Bot API: {end_time - start_time}')
+
