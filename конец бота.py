@@ -4,7 +4,7 @@ from aiogram.types import Message
 
 # Вместо BOT TOKEN HERE нужно вставить токен вашего бота,
 # полученный у @BotFather
-BOT_TOKEN = '8265712219:AAFLS46H-VPasNf_E0r-30vtzeR5Kni1Xts'
+BOT_TOKEN = ''
 
 # Создаем объекты бота и диспетчера
 bot = Bot(token=BOT_TOKEN)
@@ -48,3 +48,4 @@ async def send_echo(message: Message):
 
 if __name__ == '__main__':
     dp.run_polling(bot)
+
